@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qing Yang | Associate Professor of Computer Science and Engineering, University of North Texas</title>
+<meta name="description" content="Qing Yang is an Associate Professor in the Department of Computer Science and Engineering at the University of North Texas. Research interests: connected and autonomous vehicles, Internet of Things, network security and privacy.">
+<style>
+  :root{
+    --unt-green:#00703c;
+    --ink:#1c1c1c;
+    --muted:#5a5a5a;
+    --faint:#8a8a8a;
+    --line:#e4e4e4;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--unt-green);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:880px;margin:0 auto;padding:0 28px}
+
+  /* thin university accent bar */
+  .top-rule{height:5px;background:var(--unt-green)}
+
+  /* ---------- header ---------- */
+  header{padding:48px 0 34px;border-bottom:1px solid var(--line)}
+  .header-grid{display:flex;gap:36px;align-items:flex-start}
+  .portrait{
+    width:168px;flex:0 0 auto;border-radius:10px;
+    border:1px solid var(--line);
+  }
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:42px;font-weight:500;letter-spacing:.3px;line-height:1.15;
+    margin-bottom:10px;
+  }
+  .position{font-size:16.5px;color:var(--ink);margin-bottom:14px;line-height:1.6}
+  .position .dept{color:var(--muted)}
+  .contact{font-size:14.5px;color:var(--muted);margin-bottom:16px;line-height:1.9}
+  .contact .label{color:var(--faint);display:inline-block;min-width:52px}
+  .quick-links{display:flex;gap:22px;font-size:15px;font-weight:600}
+  .quick-links a{border-bottom:1px solid transparent}
+  .quick-links a:hover{border-bottom-color:var(--unt-green);text-decoration:none}
+
+  /* ---------- nav ---------- */
+  nav{background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);
+      position:sticky;top:0;z-index:50}
+  nav .wrap{display:flex;gap:2px;overflow-x:auto;padding-top:0;padding-bottom:0}
+  nav a{
+    color:var(--muted);font-size:14px;font-weight:600;white-space:nowrap;
+    padding:14px 13px 12px;border-bottom:2px solid transparent;
+  }
+  nav a:hover{color:var(--unt-green);text-decoration:none;border-bottom-color:var(--unt-green)}
+
+  /* ---------- sections ---------- */
+  main section{padding:36px 0;border-bottom:1px solid var(--line)}
+  main section:last-child{border-bottom:none}
+  h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:24px;font-weight:500;color:var(--ink);
+    margin-bottom:20px;padding-bottom:10px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  h2::after{
+    content:"";position:absolute;left:0;bottom:-1px;width:56px;height:2px;
+    background:var(--unt-green);
+  }
+  h3{font-size:16px;margin:22px 0 10px;color:var(--ink)}
+  p{margin-bottom:14px}
+  ul{margin:0 0 14px 22px}
+  li{margin-bottom:9px}
+  .muted{color:var(--muted);font-size:14.5px}
+
+  /* news */
+  .news li{list-style:none;margin:0 0 12px -22px;padding-left:0;display:flex;gap:14px}
+  .news .date{
+    flex:0 0 86px;color:var(--faint);font-size:13.5px;font-weight:600;
+    text-transform:uppercase;letter-spacing:.4px;padding-top:3px;
+  }
+
+  /* research tags */
+  .interests{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 16px}
+  .tag{
+    border:1px solid #cfe3d6;background:#f2f8f4;color:#0a5c30;
+    border-radius:4px;padding:6px 14px;font-size:14px;font-weight:600;
+  }
+
+  /* publications */
+  .pub{margin-bottom:18px}
+  .pub .p-title{font-weight:600;line-height:1.55}
+  .pub .p-authors{font-size:15px}
+  .pub .p-venue{color:var(--muted);font-size:14.5px;font-style:italic}
+  .award{
+    display:inline-block;font-style:normal;font-size:12px;font-weight:700;
+    color:#0a5c30;border:1px solid #0a5c30;border-radius:3px;
+    padding:1px 7px;margin-left:8px;vertical-align:1px;white-space:nowrap;
+  }
+
+  /* two-column lists */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+  .two-col h3{margin-top:4px}
+
+  footer{border-top:1px solid var(--line);margin-top:12px}
+  footer .wrap{padding-top:24px;padding-bottom:28px;font-size:13.5px;color:var(--faint);
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  @media (max-width:640px){
+    .wrap{padding:0 20px}
+    header{padding:34px 0 26px}
+    .header-grid{gap:22px}
+    .portrait{width:118px}
+    h1{font-size:32px}
+    .two-col{grid-template-columns:1fr}
+    .news .date{flex-basis:70px}
+  }
+</style>
+</head>
+<body>
+
+<div class="top-rule"></div>
+
+<header>
+  <div class="wrap header-grid">
+    <img class="portrait" src="photo.jpg" alt="Portrait of Qing Yang">
+    <div>
+      <h1>Qing Yang</h1>
+      <p class="position">
+        Associate Professor<br>
+        <span class="dept">Department of Computer Science and Engineering<br>
+        University of North Texas</span>
+      </p>
+      <p class="contact">
+        <span class="label">Email</span> <a href="mailto:qing.yang@unt.edu">qing.yang@unt.edu</a><br>
+        <span class="label">Office</span> 3940 N. Elm, Room F201, Denton, TX 76207
+      </p>
+      <div class="quick-links">
+        <a href="mailto:qing.yang@unt.edu">Email</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#research">Research</a>
+    <a href="#awards">Awards</a>
+    <a href="#publications">Publications</a>
+    <a href="#grants">Grants</a>
+    <a href="#students">Students</a>
+    <a href="#service">Service</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Qing Yang is an Associate Professor in the Department of Computer Science and Engineering
+    at the University of North Texas (UNT). He received the Ph.D. degree in Computer Science
+    from Auburn University in 2011, the M.E. degree in Computer Science from Harbin Institute
+    of Technology in 2005, and the B.E. degree in Computer Science from Nankai University
+    in 2003.
+  </p>
+  <p>
+    From 2011 to 2017, he was an Assistant Professor in the Department of Computer Science
+    at Montana State University. He joined UNT as an Assistant Professor in 2017 and was
+    promoted to Associate Professor in 2021. His research has been supported by the National
+    Science Foundation, the U.S. Department of Energy, Toyota Motor North America, and the
+    Army Research Laboratory.
+  </p>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><span class="date">Jun 2026</span><span>Two papers accepted to <em>CVPR 2026</em>: “Mind the Hitch: Dynamic Calibration and Articulated Perception for Autonomous Trucks” and “F3DGS: Federated 3D Gaussian Splatting for Decentralized Multi-Agent World Modeling” (workshop).</span></li>
+    <li><span class="date">Jun 2026</span><span>“M3CAD: Towards Generic Cooperative Autonomous Driving Benchmark” accepted to <em>ICRA 2026</em>.</span></li>
+    <li><span class="date">2025</span><span>Received the <strong>TAMEST Protégé Award</strong> from the Texas Academy of Medicine, Engineering, Science and Technology.</span></li>
+    <li><span class="date">2025</span><span>Recognized as one of the <strong>top 2% most-cited</strong> researchers worldwide.</span></li>
+    <li><span class="date">2025</span><span><strong>Best Paper Runner-Up Award</strong>, IEEE MOST 2025, for “SOUND: Unknown Object Detection for Autonomous Driving.”</span></li>
+    <li><span class="date">2025</span><span><strong>Best Paper Award</strong>, International Symposium on Intelligent Computing and Networking.</span></li>
+  </ul>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="interests">
+    <span class="tag">Connected and Autonomous Vehicles</span>
+    <span class="tag">Internet of Things</span>
+    <span class="tag">Network Security and Privacy</span>
+  </div>
+  <p>
+    My current research centers on cooperative perception for connected and automated
+    vehicles, vehicular edge computing, and privacy-preserving machine learning for
+    intelligent transportation systems — spanning efficient multi-agent 3D perception,
+    bandwidth-aware feature sharing, and trustworthy data sharing on the vehicular edge.
+  </p>
+</section>
+
+<section id="awards">
+  <h2>Selected Awards and Honors</h2>
+  <ul>
+    <li><strong>TAMEST Protégé Award</strong>, Texas Academy of Medicine, Engineering, Science and Technology, 2025</li>
+    <li>Top 2% most-cited researchers worldwide, 2025</li>
+    <li><strong>Best Paper Runner-Up Award</strong>, IEEE International Conference on Mobility, Operations, Services and Technologies (MOST), 2025</li>
+    <li><strong>Best Paper Award</strong>, International Symposium on Intelligent Computing and Networking, 2025</li>
+    <li><strong>Best Paper Award</strong>, IEEE International Conference on E-health Networking, Application &amp; Services (Healthcom), 2023</li>
+    <li><strong>PACCAR Distinguished Fellow</strong>, College of Engineering, UNT, 2022</li>
+    <li><strong>College of Engineering Research Award</strong>, UNT, 2021</li>
+    <li><strong>Best Paper Award</strong>, ACM/IEEE Symposium on Edge Computing (SEC), 2019</li>
+    <li><strong>IEEE Senior Member</strong>, 2017</li>
+  </ul>
+</section>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+
+  <div class="pub">
+    <div class="p-title">M3CAD: Towards Generic Cooperative Autonomous Driving Benchmark</div>
+    <div class="p-authors">M. Zhu, Y. Zhu, Y. Zhu, Q. Chen, D. Qu, S. Fu, and Q. Yang</div>
+    <div class="p-venue">Proc. IEEE International Conference on Robotics &amp; Automation (ICRA), 2026. Accepted.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">Mind the Hitch: Dynamic Calibration and Articulated Perception for Autonomous Trucks</div>
+    <div class="p-authors">M. Zhu, Y. Zhu, S. Fu, and Q. Yang</div>
+    <div class="p-venue">Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026. Accepted.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">GSOT3D: Towards Generic 3D Single Object Tracking in the Wild</div>
+    <div class="p-authors">Y. Jiao, Y. Li, J. Ding, Q. Yang, S. Fu, H. Fan, and L. Zhang</div>
+    <div class="p-venue">Proc. IEEE/CVF International Conference on Computer Vision (ICCV), 2025.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">SOUND: Unknown Object Detection for Autonomous Driving <span class="award">Best Paper Runner-Up</span></div>
+    <div class="p-authors">D. Chen, X. Ma, Y. He, W. Feng, Q. Yang, S. Fu, and T. Tsao</div>
+    <div class="p-venue">Proc. IEEE International Conference on Mobility, Operations, Services and Technologies (MOST), 2025.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">Networking in Collaborative Multi-Robot Systems for Enhanced Mapping and Navigation <span class="award">Best Paper Award</span></div>
+    <div class="p-authors">M. Dehghani Tezerjani, H. Liu, Q. Yang, X. Li, and Y. Huang</div>
+    <div class="p-venue">Proc. International Symposium on Intelligent Computing and Networking, Springer, 2025.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">Privacy-Preserving Driver Monitoring on the Edges: Transformer-Based Processing of Secret Shares from Video Streams</div>
+    <div class="p-authors">T. Bai, D. Shao, Y. He, Q. Yang, Y. Feng, and S. Fu</div>
+    <div class="p-venue">ACM Transactions on Internet of Things, vol. 7, no. 3, 2026.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">Bringing Different Views Together: A Hybrid Cooperative Perception Framework for Connected Autonomous Vehicles</div>
+    <div class="p-authors">D. Carrillo, M. Nutt, M. Meijer, J. Khan, S. Fu, and Q. Yang</div>
+    <div class="p-venue">IEEE Network, 2025.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">SiCP: Simultaneous Individual and Cooperative Perception for 3D Object Detection in Connected and Automated Vehicles</div>
+    <div class="p-authors">D. Qu, Q. Chen, T. Bai, H. Lu, H. Fan, H. Zhang, S. Fu, and Q. Yang</div>
+    <div class="p-venue">Proc. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">HEAD: A Bandwidth-Efficient Cooperative Perception Approach for Heterogeneous Connected and Autonomous Vehicles</div>
+    <div class="p-authors">D. Qu, Q. Chen, Y. Zhu, Y. Zhu, S. S. Avedisov, S. Fu, and Q. Yang</div>
+    <div class="p-venue">Proc. European Conference on Computer Vision (ECCV), Springer, 2024.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">F-Cooper: Feature Based Cooperative Perception for Autonomous Vehicle Edge Computing System using 3D Point Clouds <span class="award">Best Paper Award</span></div>
+    <div class="p-authors">Q. Chen, X. Ma, S. Tang, J. Guo, Q. Yang, and S. Fu</div>
+    <div class="p-venue">Proc. ACM/IEEE Symposium on Edge Computing (SEC), 2019.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">Slim-FCP: Lightweight Feature-Based Cooperative Perception for Connected Automated Vehicles</div>
+    <div class="p-authors">J. Guo, D. Carrillo, Q. Chen, Q. Yang, S. Fu, H. Lu, and R. Guo</div>
+    <div class="p-venue">IEEE Internet of Things Journal, 2022.</div>
+  </div>
+  <div class="pub">
+    <div class="p-title">A New Approximation Algorithm for Genomic Scaffold Filling Based on Contig <span class="award">Best Paper Award</span></div>
+    <div class="p-authors">Y. Zhu, N. Liu, and Q. Yang</div>
+    <div class="p-venue">Proc. IEEE International Conference on E-health Networking, Application &amp; Services (Healthcom), 2023.</div>
+  </div>
+
+</section>
+
+<section id="grants">
+  <h2>Selected Grants</h2>
+  <ul>
+    <li><strong>PI</strong>, Toyota Motor North America — “Cooperative Perception for Connected and Automated Vehicles,” 2022–2027</li>
+    <li><strong>PI</strong>, U.S. Department of Energy — “A Hybrid and Precise Cooperative Perception System for Connected Vehicles,” 2022–2025</li>
+    <li><strong>Co-PI</strong>, NSF IUCRC: Center for Electric, Connected and Autonomous Technologies for Mobility (eCAT), 2023–2028</li>
+    <li><strong>Co-PI</strong>, Army Research Laboratory — “Cognitive Distributed Sensing in Congested Radio Frequency Environments” (Phases I–III), 2023–2026</li>
+    <li><strong>PI</strong>, NSF — “Enabling Machine Learning based Cooperative Perception with mmWave Communication for Autonomous Vehicle Safety,” 2020–2023</li>
+    <li><strong>PI</strong>, NSF — “CyberTraining: Collaborative and Integrated Training on Connected and Autonomous Vehicles Cyber Infrastructure,” 2020–2023</li>
+  </ul>
+</section>
+
+<section id="students">
+  <h2>Student Advising</h2>
+  <div class="two-col">
+    <div>
+      <h3>Ph.D. Graduates</h3>
+      <ul>
+        <li>Deyuan Qu (2025) — Toyota North America</li>
+        <li>Sudip Dhakal (2024) — Florida Gulf Coast University</li>
+        <li>Jingda Guo (2021) — HillStone Networks</li>
+        <li>Qi Chen (2020) — Toyota North America</li>
+        <li>Guangchi Liu (2017) — Southeastern University</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Current Ph.D. Students</h3>
+      <ul>
+        <li>Dominic Carrillo</li>
+        <li>Michael Nutt</li>
+        <li>Mohammad Dehghani Tezerjani</li>
+        <li>Yongqi Zhu</li>
+        <li>Yihao Zhu</li>
+        <li>Morui Zhu</li>
+        <li>Xu Gao</li>
+        <li>Yongshuo Liu</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <h2>Professional Service</h2>
+  <ul>
+    <li>Area Editor, <em>IEEE Internet of Things Journal</em>, 2022 – present</li>
+    <li>Editor, <em>IEEE Transactions on Vehicular Technology</em>, 2022 – present</li>
+    <li>Editor, <em>IEEE Transactions on Multimedia</em>, 2022 – 2025</li>
+    <li>Editor, <em>IEEE Internet of Things Journal</em>, 2017 – 2022</li>
+    <li>Panelist and proposal reviewer, National Science Foundation (multiple programs)</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Qing Yang · Department of Computer Science and Engineering, University of North Texas</span>
+    <span>Last updated: September 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
