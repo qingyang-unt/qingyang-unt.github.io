@@ -93,7 +93,20 @@
   .pub .p-title{font-weight:600;line-height:1.55}
   .pub .p-authors{font-size:15px}
   .pub .p-venue{color:var(--muted);font-size:14.5px;font-style:italic}
-  .award{
+
+  /* featured project */
+  .project{
+    border:1px solid var(--line);border-radius:8px;background:#fbfbfb;
+    padding:26px;margin-top:6px;
+  }
+  .project-title{font-size:17px;font-weight:700;line-height:1.5;margin-bottom:6px}
+  .project-links{font-size:14.5px;font-weight:600;margin-bottom:12px}
+  .project-links a{margin-right:4px}
+  .demo-video{
+    width:100%;border-radius:6px;border:1px solid var(--line);
+    margin-top:10px;background:#000;display:block;
+  }
+  .video-caption{font-size:13px;color:var(--faint);margin-top:8px;margin-bottom:0}  .award{
     display:inline-block;font-style:normal;font-size:12px;font-weight:700;
     color:#0a5c30;border:1px solid #0a5c30;border-radius:3px;
     padding:1px 7px;margin-left:8px;vertical-align:1px;white-space:nowrap;
@@ -200,6 +213,38 @@
     intelligent transportation systems — spanning efficient multi-agent 3D perception,
     bandwidth-aware feature sharing, and trustworthy data sharing on the vehicular edge.
   </p>
+
+  <h3>Featured Project</h3>
+  <div class="project">
+    <p class="project-title">M³CAD: Towards Generic Cooperative Autonomous Driving Benchmark <span class="award">ICRA 2026</span></p>
+    <p class="project-links">
+      <a href="https://zhumorui.github.io/m3cad/">Project Page</a> ·
+      <a href="https://arxiv.org/abs/2505.06746">Paper</a> ·
+      <a href="https://github.com/zhumorui/M3CAD">Code</a>
+    </p>
+    <p>
+      M³CAD is a benchmark for generic cooperative autonomous driving, comprising
+      204 sequences with 30K frames across diverse cooperative driving scenarios.
+      Each sequence includes multiple vehicles and sensing modalities — LiDAR point
+      clouds, RGB images, and GPS/IMU — supporting six tasks: object detection and
+      tracking, mapping, motion forecasting, occupancy prediction, and path planning.
+      To our knowledge, it is the most comprehensive benchmark specifically tailored
+      for cooperative multi-task autonomous driving research. The project also
+      introduces E2EC, a simple yet effective end-to-end cooperative driving framework
+      that leverages inter-vehicle shared information for improved path planning.
+    </p>
+    <ul>
+      <li>204 sequences / 30K frames of multimodal data (LiDAR, RGB, GPS/IMU)</li>
+      <li>Six supported tasks, for both single-vehicle and cooperative settings</li>
+      <li>6-camera dataset with nuScenes-identical layout, plus replay scripts with customizable camera positions</li>
+      <li>Baseline models, evaluation results, and the E2EC framework released openly</li>
+    </ul>
+    <video class="demo-video" controls preload="metadata">
+      <source src="m3cad-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="video-caption">Demo: cooperative perception results on the M³CAD dataset.</p>
+  </div>
 </section>
 
 <section id="awards">
