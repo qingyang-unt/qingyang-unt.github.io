@@ -111,7 +111,12 @@
     width:100%;border-radius:6px;border:1px solid var(--line);
     margin-top:10px;background:#000;display:block;
   }
-  .video-caption{font-size:13px;color:var(--faint);margin-top:8px;margin-bottom:0}  .award{
+  .video-caption{font-size:13px;color:var(--faint);margin-top:8px;margin-bottom:0}
+  .project-figure{
+    width:100%;border-radius:6px;border:1px solid var(--line);
+    margin-top:10px;display:block;background:#fff;
+  }
+  .project + .project{margin-top:26px}  .award{
     display:inline-block;font-style:normal;font-size:12px;font-weight:700;
     color:#0a5c30;border:1px solid #0a5c30;border-radius:3px;
     padding:1px 7px;margin-left:8px;vertical-align:1px;white-space:nowrap;
@@ -240,6 +245,25 @@
       Your browser does not support the video tag.
     </video>
     <p class="video-caption">Demo: cooperative perception results on the M³CAD dataset.</p>
+  </div>
+
+  <div class="project">
+    <p class="project-title">dCAP: Dynamic Calibration and Articulated Perception for Autonomous Trucks <span class="award">CVPR 2026</span></p>
+    <p>
+      Autonomous trucks are articulated at the fifth-wheel hitch, so camera
+      extrinsics across the tractor-trailer rig change over time instead of staying
+      fixed. dCAP is a vision-based framework that continuously estimates the 6-DoF
+      relative pose between tractor and trailer cameras — with no static
+      initialization required — enabling articulated-aware perception for end-to-end
+      driving stacks. The project also releases STT4AT, a CARLA-based benchmark
+      simulating semi-trailer trucks with synchronized multi-sensor suites.
+    </p>
+    <p class="project-links">
+      <a class="btn" href="https://github.com/zhumorui/dCAP">Code &amp; Dataset</a>
+      <a href="https://arxiv.org/abs/2603.23711">Paper</a>
+    </p>
+    <img class="project-figure" src="dcap-teaser.png" alt="Overview of dCAP: dynamic calibration (top) and articulated perception pipeline (bottom) for autonomous trucks">
+    <p class="video-caption">dCAP vs. DUSt3R and VGGT on articulated tractor–trailer calibration (top); the articulated perception pipeline (bottom).</p>
   </div>
 </section>
 
